@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BroadCastWeb | Agencia de Desarrollo Web Premium</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Lucide Icons for simplicity -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <canvas id="star-canvas"></canvas>
+
+    <nav>
+        <a href="#" class="logo">BroadCast<span>Web</span></a>
+        <div class="nav-links">
+            <a href="#servicios">Servicios</a>
+            <a href="#proceso">Proceso</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#sobre-nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+        <div class="nav-actions">
+            <a href="https://wa.me/5491172023171?text=Hola!%20Me%20gustaría%20solicitar%20un%20presupuesto." target="_blank" class="btn btn-primary nav-cta">Presupuesto</a>
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="moon"></div>
+        <div class="hero-content reveal">
+            <div class="astronaut-container">
+                <svg class="astronaut" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Suit Body -->
+                    <path d="M20 40C20 35 24 32 32 32C40 32 44 35 44 40V50H20V40Z" fill="white"/>
+                    <!-- Helmet -->
+                    <circle cx="32" cy="22" r="14" fill="white"/>
+                    <path d="M24 18C24 15 27 13 32 13C37 13 40 15 40 18V24C40 27 37 29 32 29C27 29 24 27 24 24V18Z" fill="#1a1a1a"/>
+                    <!-- Visor Reflection -->
+                    <path d="M28 16C28 15.5 29 15 31 15" stroke="#00ff9c" stroke-width="1" stroke-linecap="round"/>
+                    <!-- Arms -->
+                    <path d="M20 38L14 44L16 46L22 40" fill="white"/>
+                    <path d="M44 38L50 44L48 46L42 40" fill="white"/>
+                    <!-- Laptop Base -->
+                    <path d="M24 48H40L42 52H22L24 48Z" fill="#333"/>
+                    <!-- Laptop Screen -->
+                    <path d="M26 42H38V48H26V42Z" fill="#444" stroke="#00ff9c" stroke-width="0.5"/>
+                    <rect x="28" y="44" width="8" height="2" fill="#00ff9c" opacity="0.5"/>
+                    <!-- Backpack -->
+                    <rect x="18" y="34" width="4" height="12" rx="1" fill="#ddd"/>
+                    <rect x="42" y="34" width="4" height="12" rx="1" fill="#ddd"/>
+                </svg>
+            </div>
+            <h1>Desarrollamos el futuro digital de tu negocio</h1>
+            <p>Creamos páginas web, aplicaciones y software a medida con diseño moderno y tecnología de alto rendimiento.</p>
+            <div class="btn-group">
+                <a href="#portfolio" class="btn btn-primary">Ver proyectos</a>
+                <a href="https://wa.me/5491172023171?text=Hola!%20Me%20gustaría%20solicitar%20un%20presupuesto." target="_blank" class="btn btn-secondary">Solicitar presupuesto</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="marquee-container">
+        <div class="marquee-content">
+            <div class="marquee-item"><span>✦</span> Desarrollamos tu proyecto en un día</div>
+            <div class="marquee-item"><span>✦</span> SEO</div>
+            <div class="marquee-item"><span>✦</span> Últimas tendencias en diseño</div>
+            <div class="marquee-item"><span>✦</span> Oferta del 50% en tu primer proyecto</div>
+            <!-- Duplicate for seamless loop -->
+            <div class="marquee-item"><span>✦</span> Desarrollamos tu proyecto en un día</div>
+            <div class="marquee-item"><span>✦</span> SEO</div>
+            <div class="marquee-item"><span>✦</span> Últimas tendencias en diseño</div>
+            <div class="marquee-item"><span>✦</span> Oferta del 50% en tu primer proyecto</div>
+        </div>
+    </div>
+
+    <section id="servicios" class="services">
+        <div class="section-header reveal">
+            <div class="section-badge">
+                Servicios
+                <div class="satellite-orbit"><div class="satellite"></div></div>
+            </div>
+            <h2>Nuestros Servicios</h2>
+            <p>Soluciones digitales integrales para empresas que buscan destacar.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card reveal">
+                <i data-lucide="layout"></i>
+                <h3>Diseño Web</h3>
+                <p>Interfaces impactantes y funcionales que capturan la esencia de tu marca.</p>
+            </div>
+            <div class="service-card reveal">
+                <i data-lucide="code"></i>
+                <h3>Desarrollo Web</h3>
+                <p>Código limpio y escalable utilizando las últimas tecnologías del mercado.</p>
+            </div>
+            <div class="service-card reveal">
+                <i data-lucide="smartphone"></i>
+                <h3>Aplicaciones Web</h3>
+                <p>Experiencias interactivas y potentes accesibles desde cualquier dispositivo.</p>
+            </div>
+            <div class="service-card reveal">
+                <i data-lucide="cpu"></i>
+                <h3>Software a Medida</h3>
+                <p>Sistemas personalizados diseñados para optimizar tus procesos internos.</p>
+            </div>
+            <div class="service-card reveal">
+                <i data-lucide="palette"></i>
+                <h3>UX/UI Design</h3>
+                <p>Investigación y diseño centrado en el usuario para máxima conversión.</p>
+            </div>
+            <div class="service-card reveal">
+                <i data-lucide="shopping-cart"></i>
+                <h3>Ecommerce</h3>
+                <p>Tiendas online robustas y seguras para impulsar tus ventas globales.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="proceso" class="how-we-work">
+        <div class="section-header reveal">
+            <div class="section-badge">
+                Proceso
+                <div class="satellite-orbit"><div class="satellite"></div></div>
+            </div>
+            <h2>Nuestra Metodología</h2>
+            <p>Un flujo de trabajo optimizado, desde la concepción hasta el despliegue estelar.</p>
+        </div>
+
+        <div class="process-fan reveal">
+            <!-- Step 1 -->
+            <div class="fan-item active">
+                <div class="fan-header">
+                    <div class="fan-icon"><i data-lucide="search"></i></div>
+                    <div class="fan-title">
+                        <span class="step-num">Paso 01</span>
+                        <h3>Estrategia & Discovery</h3>
+                    </div>
+                    <i data-lucide="chevron-down" class="fan-arrow"></i>
+                </div>
+                <div class="fan-content">
+                    <div class="fan-inner">
+                        <p>Inmersión total en tu modelo de negocio para trazar la ruta más eficiente hacia el éxito. Analizamos tu competencia y definimos KPIs claros para medir el impacto real.</p>
+                        <div class="fan-tags">
+                            <span>Benchmarking</span>
+                            <span>User Research</span>
+                            <span>Roadmap</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="fan-item">
+                <div class="fan-header">
+                    <div class="fan-icon"><i data-lucide="palette"></i></div>
+                    <div class="fan-title">
+                        <span class="step-num">Paso 02</span>
+                        <h3>Diseño UX/UI</h3>
+                    </div>
+                    <i data-lucide="chevron-down" class="fan-arrow"></i>
+                </div>
+                <div class="fan-content">
+                    <div class="fan-inner">
+                        <p>Creamos interfaces intuitivas y estéticas que no solo se ven bien, sino que guían al usuario hacia la conversión. Prototipado rápido y diseño centrado en el humano.</p>
+                        <div class="fan-tags">
+                            <span>Wireframing</span>
+                            <span>Visual Design</span>
+                            <span>Prototyping</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="fan-item">
+                <div class="fan-header">
+                    <div class="fan-icon"><i data-lucide="code-2"></i></div>
+                    <div class="fan-title">
+                        <span class="step-num">Paso 03</span>
+                        <h3>Desarrollo Full-Stack</h3>
+                    </div>
+                    <i data-lucide="chevron-down" class="fan-arrow"></i>
+                </div>
+                <div class="fan-content">
+                    <div class="fan-inner">
+                        <p>Transformamos diseños en código robusto, escalable y de alto rendimiento. Utilizamos las tecnologías más modernas para asegurar una experiencia fluida en cualquier dispositivo.</p>
+                        <div class="fan-tags">
+                            <span>React / Next.js</span>
+                            <span>Node.js</span>
+                            <span>API Integration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="fan-item">
+                <div class="fan-header">
+                    <div class="fan-icon"><i data-lucide="shield-check"></i></div>
+                    <div class="fan-title">
+                        <span class="step-num">Paso 04</span>
+                        <h3>QA & Optimización</h3>
+                    </div>
+                    <i data-lucide="chevron-down" class="fan-arrow"></i>
+                </div>
+                <div class="fan-content">
+                    <div class="fan-inner">
+                        <p>Sometemos el producto a pruebas rigurosas de seguridad, rendimiento y usabilidad. Nada sale al espacio sin antes haber sido verificado por nuestro equipo de control de calidad.</p>
+                        <div class="fan-tags">
+                            <span>Unit Testing</span>
+                            <span>Performance</span>
+                            <span>SEO Audit</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="fan-item">
+                <div class="fan-header">
+                    <div class="fan-icon"><i data-lucide="rocket"></i></div>
+                    <div class="fan-title">
+                        <span class="step-num">Paso 05</span>
+                        <h3>Lanzamiento & Soporte</h3>
+                    </div>
+                    <i data-lucide="chevron-down" class="fan-arrow"></i>
+                </div>
+                <div class="fan-content">
+                    <div class="fan-inner">
+                        <p>Desplegamos tu proyecto y te acompañamos en el crecimiento. Ofrecemos soporte continuo y optimizaciones basadas en datos reales de usuarios.</p>
+                        <div class="fan-tags">
+                            <span>Deployment</span>
+                            <span>Maintenance</span>
+                            <span>Analytics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="proceso-tech reveal">
+            <h3>Stack Tecnológico</h3>
+            <div class="tech-grid">
+                <div class="tech-item"><i data-lucide="file-type-2"></i><span>HTML</span></div>
+                <div class="tech-item"><i data-lucide="file-code"></i><span>CSS</span></div>
+                <div class="tech-item"><i data-lucide="terminal"></i><span>JS</span></div>
+                <div class="tech-item"><i data-lucide="atom"></i><span>React</span></div>
+                <div class="tech-item"><i data-lucide="layers"></i><span>Next.js</span></div>
+                <div class="tech-item"><i data-lucide="server"></i><span>Node.js</span></div>
+                <div class="tech-item"><i data-lucide="figma"></i><span>Figma</span></div>
+                <div class="tech-item"><i data-lucide="globe"></i><span>WordPress</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="section-header reveal">
+            <div class="section-badge">
+                Portfolio
+                <div class="satellite-orbit"><div class="satellite"></div></div>
+            </div>
+            <h2>Proyectos Destacados</h2>
+            <p>Una muestra de nuestra pasión por la excelencia digital.</p>
+        </div>
+        <div class="portfolio-grid">
+            <!-- Proyecto 1: App Web Menú Digital -->
+            <div class="portfolio-card reveal">
+                <div class="portfolio-img-container">
+                    <img src="assets/proyecto-1.png" alt="App Web Menú para Parrilla">
+                    <div class="portfolio-tag">Gastronomía</div>
+                </div>
+                <div class="portfolio-info">
+                    <h4>App Web Menú Digital</h4>
+                    <p>Aplicación interactiva para restaurantes con pedidos online y confirmación automática vía WhatsApp.</p>
+                </div>
+            </div>
+
+            <!-- Proyecto 2: Web Empresa de Transporte -->
+            <div class="portfolio-card reveal">
+                <div class="portfolio-img-container">
+                    <img src="assets/proyecto-2.png" alt="Web Empresa de Transporte">
+                    <div class="portfolio-tag">Corporativo</div>
+                </div>
+                <div class="portfolio-info">
+                    <h4>Web Empresa de Transporte</h4>
+                    <p>Sitio web institucional destacando servicios de transporte seguro y puntual, con detalles de flota.</p>
+                </div>
+            </div>
+
+            <!-- Proyecto 3: Web Inmobiliaria -->
+            <div class="portfolio-card reveal">
+                <div class="portfolio-img-container">
+                    <img src="assets/proyecto-3.png" alt="Web Inmobiliaria">
+                    <div class="portfolio-tag">Real Estate</div>
+                </div>
+                <div class="portfolio-info">
+                    <h4>Web Inmobiliaria</h4>
+                    <p>Plataforma moderna para la exhibición y búsqueda de propiedades, ideal para conectar agentes y clientes.</p>
+                </div>
+            </div>
+
+            <!-- Proyecto 4: Catálogo Online -->
+            <div class="portfolio-card reveal">
+                <div class="portfolio-img-container">
+                    <img src="assets/proyecto-4.png" alt="Catálogo Online">
+                    <div class="portfolio-tag">Ecommerce</div>
+                </div>
+                <div class="portfolio-info">
+                    <h4>Catálogo Online</h4>
+                    <p>Aplicación web tipo tienda interactiva para gestionar catálogo de productos, carrito de compras y pedidos.</p>
+                </div>
+            </div>
+
+            <!-- Proyecto 5: Web Veterinaria -->
+            <div class="portfolio-card reveal">
+                <div class="portfolio-img-container">
+                    <img src="assets/proyecto-5.png" alt="Web Veterinaria">
+                    <div class="portfolio-tag">Salud Integral</div>
+                </div>
+                <div class="portfolio-info">
+                    <h4>Web Veterinaria</h4>
+                    <p>Página web enfocada en generar confianza, ofreciendo servicios veterinarios, planes de cuidado y testimonios reales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="section-header reveal">
+            <h2>Lo que dicen nuestros clientes</h2>
+        </div>
+        <div class="testimonial-grid">
+            <div class="testimonial-card reveal">
+                <p>"BroadCastWeb transformó nuestra presencia online. El diseño es simplemente de otro mundo."</p>
+                <div class="user-info">
+                    <img src="https://i.pravatar.cc/150?u=1" alt="User">
+                    <div>
+                        <h5>Carlos Méndez</h5>
+                        <span>CEO, TechFlow</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card reveal">
+                <p>"La atención al detalle y la velocidad de carga de nuestra nueva web es impresionante."</p>
+                <div class="user-info">
+                    <img src="https://i.pravatar.cc/150?u=2" alt="User">
+                    <div>
+                        <h5>Elena Rivas</h5>
+                        <span>Marketing Manager, Solar</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card reveal">
+                <p>"Expertos en lo que hacen. Entendieron perfectamente nuestras necesidades complejas."</p>
+                <div class="user-info">
+                    <img src="https://i.pravatar.cc/150?u=3" alt="User">
+                    <div>
+                        <h5>Jorge Luis</h5>
+                        <span>CTO, Innova</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Progress Bars Section -->
+        <div class="stats-container reveal">
+            <div class="stat-item">
+                <div class="stat-info">
+                    <span>Proyectos completados</span>
+                    <span>100%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 100%;"></div>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-info">
+                    <span>Clientes felices</span>
+                    <span>99%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 99%;"></div>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-info">
+                    <span>Años de trayectoria</span>
+                    <span>95%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 95%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre-nosotros" class="about">
+        <div class="about-image reveal">
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <img src="https://picsum.photos/seed/agency1/800/600" alt="Agencia 1" class="carousel-item active">
+                    <img src="https://picsum.photos/seed/agency2/800/600" alt="Agencia 2" class="carousel-item">
+                    <img src="https://picsum.photos/seed/agency3/800/600" alt="Agencia 3" class="carousel-item">
+                </div>
+                <div class="carousel-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+        <div class="about-content reveal">
+            <div class="section-badge">
+                Nosotros
+                <div class="satellite-orbit"><div class="satellite"></div></div>
+            </div>
+            <h2>Sobre Nosotros</h2>
+            <p>Somos un equipo de apasionados por la tecnología y el diseño. En BroadCastWeb, no solo creamos sitios web; construimos experiencias digitales que impulsan el crecimiento de nuestros clientes.</p>
+            <p>Con más de 10 años de experiencia colectiva, nos especializamos en soluciones de vanguardia que combinan estética premium con funcionalidad robusta.</p>
+            
+            <div class="social-links">
+                <a href="#" class="social-icon"><i data-lucide="linkedin"></i></a>
+                <a href="#" class="social-icon"><i data-lucide="twitter"></i></a>
+                <a href="#" class="social-icon"><i data-lucide="instagram"></i></a>
+                <a href="#" class="social-icon"><i data-lucide="github"></i></a>
+            </div>
+
+            <a href="https://wa.me/5491172023171?text=Hola!%20Me%20gustaría%20solicitar%20un%20presupuesto." target="_blank" class="btn btn-secondary" style="margin-top: 2rem; display: inline-block;">Conoce al equipo</a>
+        </div>
+    </section>
+
+    <section id="contacto" class="cta">
+        <div class="cta-box reveal">
+            <h2>¿Listo para lanzar tu próximo proyecto digital?</h2>
+            <a href="https://wa.me/5491172023171?text=Hola!%20Me%20gustaría%20solicitar%20un%20presupuesto." target="_blank" class="btn btn-primary btn-rocket">
+                Contactar
+                <svg class="rocket-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L4.5 20.29L5.21 21L12 18L18.79 21L19.5 20.29L12 2Z" fill="currentColor"/>
+                    <path d="M12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14Z" fill="#050505"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-info">
+                <a href="#" class="logo">BroadCast<span>Web</span></a>
+                <p>Impulsando la innovación digital desde el corazón de BroadCastWeb.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Servicios</h4>
+                <ul>
+                    <li><a href="#">Diseño Web</a></li>
+                    <li><a href="#">Desarrollo</a></li>
+                    <li><a href="#">Ecommerce</a></li>
+                    <li><a href="#">SaaS</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Agencia</h4>
+                <ul>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="https://wa.me/5491172023171?text=Hola!%20Me%20gustaría%20solicitar%20un%20presupuesto." target="_blank">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Contacto</h4>
+                <ul>
+                    <li>hola@broadcastweb.com</li>
+                    <li>+34 900 000 000</li>
+                    <li>Madrid, España</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 BroadCastWeb. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top" aria-label="Volver arriba">
+        <i data-lucide="arrow-up"></i>
+    </a>
+
+    <a href="https://wa.me/5491172023171?text=Hola!%20Me%20gustaría%20solicitar%20un%20presupuesto." target="_blank" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.937 3.659 1.431 5.63 1.432h.006c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" fill="currentColor"/>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
+
